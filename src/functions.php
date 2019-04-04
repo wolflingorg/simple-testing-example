@@ -4,9 +4,9 @@
  * @param float $a
  * @param float $b
  *
- * @return float|int|InvalidArgumentException
+ * @return float|InvalidArgumentException
  */
-function division(float $a, float $b)
+function division(float $a, float $b): float
 {
     if ($b == 0) {
         throw new InvalidArgumentException('Division by zero');
