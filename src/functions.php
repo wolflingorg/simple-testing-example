@@ -4,7 +4,8 @@
  * @param float $a
  * @param float $b
  *
- * @return float|InvalidArgumentException
+ * @return float
+ * @throws InvalidArgumentException
  */
 function division(float $a, float $b): float
 {

@@ -28,11 +28,10 @@ class DivisionTest extends TestCase
         $this->assertEquals($expected, $result);
     }
 
-    /**
-     * @expectedException InvalidArgumentException
-     */
     public function testNegative()
     {
+        $this->expectException(InvalidArgumentException::class);
+
         division(1, 0);
     }
 }
